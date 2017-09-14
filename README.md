@@ -2,7 +2,6 @@
 
 [[Project]](https://debangli.github.io/A2RL/)   [[Paper]]() [[Code]](https://github.com/wuhuikai/TF-A2RL)  [[Online Demo]](https://wuhuikai.github.io/TF-A2RL/)    [[API]](https://algorithmia.com/algorithms/wuhuikai/A2RL)   [[Related Work: GP-GAN (for Image Blending)]](https://github.com/wuhuikai/GP-GAN)
 
-The official implementation for A2-RL: Aesthetics Aware Rinforcement Learning for Automatic Image Cropping
 
 ## Overview
 
@@ -18,25 +17,8 @@ Debang Li, Huikai Wu, Junge Zhang, Kaiqi Huang
 
 Given a source image, our algorithm could take actions step by step to find almost the best cropping window on source image. 
 
-Contact: Hui-Kai Wu (huikaiwu@icloud.com)
+Contact: Debang Li (DerekLee9312@gmail.com)
 
-## Getting started
-* Install the python libraries. (See `Requirements`).
-* Download the code from GitHub:
-```bash
-git clone https://github.com/wuhuikai/TF-A2RL.git
-cd TF-A2RL
-```
-* Download the pretrained models `vfn_rl.pk` from [Google Drive](https://drive.google.com/open?id=0Bybnpq8dvwudREJnRWhFbk1rYW8), then put them in current directory (`TF-A2RL/`).
-
-* Run the python script:
-``` bash
-python A2RL.py --image_path test_images/3846.jpg --save_path test_images/3846_cropped.jpg
-```
-or
-``` bash
-sh example.sh
-```
 
 ## Results compared with baseline methods (more [results](https://debangli.github.io/A2RL/))
 
@@ -48,23 +30,6 @@ sh example.sh
 | ![](images/readme/2903.jpg) | ![](images/readme/vfn_2903.jpg) | ![](images/readme/a2rl_2903.jpg) | ![](images/readme/gt_2903.jpg) |
 | ![](images/readme/9036.jpg) | ![](images/readme/vfn_9036.jpg) | ![](images/readme/a2rl_9036.jpg) | ![](images/readme/gt_9036.jpg) |
 
-## Requirements
-The code requires the following 3rd party libraries:
-* pickle
-* numpy
-* [skimage](http://scikit-image.org/)
-```bash
-pip install scikit-image
-```
-Details see the official [README](https://github.com/scikit-image/scikit-image) for installing skimage.
-* [TensorFlow](https://www.tensorflow.org/)
-
-Details see the official [README](https://github.com/tensorflow/tensorflow) for installing TensorFlow. 
-## Command line arguments:
-Type `python A2RL.py --help` for a complete list of the arguments.
-* `--image_path`: path of the input image
-* `--save_path`: path of output image
-## Citation
 ```
 @article{li2017a2,
   title={A2-RL: Aesthetics Aware Reinforcement Learning for Automatic Image Cropping},
